@@ -97,7 +97,7 @@ async function processLLs(LLs, info, canvasCtx, x_offset, y_offset) {
 		canvasCtx.drawImage(await imgLL('c', dirTo), (sx - x_offset) * 24, (sy - y_offset) * 24, 23, 23);
 		
 		let [curx, cury] = [sx+dx, sy+dy];
-		while (curx !== ex && cury !== ey) {
+		while (curx !== ex || cury !== ey) {
 			if (!info[`${curx}_${cury}`]) info[`${curx}_${cury}`] = [];
 			info[`${curx}_${cury}`].push({'LL': LL});
 			canvasCtx.drawImage(await imgLL(dirFrom, 'c'), (curx - x_offset) * 24, (cury - y_offset) * 24, 23, 23);
