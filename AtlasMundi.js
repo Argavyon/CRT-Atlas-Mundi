@@ -184,7 +184,12 @@ async function interactiveMap(curPlaneID, data) {
 }
 
 function main() {
-    const data = getJsonData('https://raw.githubusercontent.com/Argavyon/CRT-Atlas-Mundi/main/data.json');
+    const data = getJsonData(
+        'https://raw.githubusercontent.com/Argavyon/CRT-Atlas-Mundi/main/Cordillera.json',
+        'https://raw.githubusercontent.com/Argavyon/CRT-Atlas-Mundi/main/Purgatorio.json',
+        'https://raw.githubusercontent.com/Argavyon/CRT-Atlas-Mundi/main/Stygia.json',
+        'https://raw.githubusercontent.com/Argavyon/CRT-Atlas-Mundi/main/Elysium.json',
+    );
 	interactiveMap(406, data);
 	document.querySelectorAll('li.nav-item button').forEach(btn => {
 		btn.onclick = function() { interactiveMap(btn.value, data); }

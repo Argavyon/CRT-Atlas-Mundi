@@ -1,0 +1,96 @@
+{
+  "Purgatorio":{
+    "Fonts":[
+      {
+        "name": "Crucible of Goros",
+        "aspect": "Fire",
+        "location": [17, 19],
+        "desc": "A hardened lava flow, perhaps the height of a man, has erupted from the ground here; one side gapes open in a white-hot maw from which the glow of a lava pit inside the cooled edges can be seen."
+      },
+      {
+        "name": "Coil of the Pulse",
+        "aspect": "Electric",
+        "location": [8, 15],
+        "desc": "A thick coil of unknown metal stands here. Sparks race up the coil in a regular rhythm, popping and dissipating as they reach its apex."
+      },
+      {
+        "name": "Beyonders Howl",
+        "aspect": "Slashing",
+        "location": [13, 11],
+        "desc": "A sharp, almost cutting wind howls and buffets the air here. As the wind swirls rapidly about the ground, the clatter of small objects caught in its gale almost masks the hissing, eerie howl it makes as it whips about."
+      },
+      {
+        "name": "Ironshrub",
+        "aspect": "Piercing",
+        "location": [17, 28],
+        "desc": "What appears to be a shrub made of wrought iron has overgrown most of this location, its thin tendrils covered in protective spikes and the thin, black needle clusters at the end of each of its shoots appearing as small, spiked sea urchins."
+      },
+      {
+        "name": "Mouldering Pillar",
+        "aspect": "Death",
+        "location": [22, 11],
+        "desc": "The stench of rot washes out from a crater that appears to be a great, open sore, with a sickly flow of green and purple mist cascading outward."
+      },
+      {
+        "name": "Skyswarm",
+        "aspect": "Impact",
+        "location": [23, 4],
+        "desc": "A cluster of enormous boulders spin and float gently in the void high above this location. Occasionally there is a great commotion and awful grinding as two boulders slowly come into contact, grinding against each other for a moment before being mutually flung away in different directions than before."
+      },
+      {
+        "name": "Dancing String",
+        "aspect": "Acid",
+        "location": [25, 25],
+        "desc": "A ring comprised of perhaps two dozen fist-sized balls of varying colors spins and dances in the air here, weaving and bobbing away from obstacles and obstructions as they float about. A citrus tang wafts in the air."
+      },
+      {
+        "name": "Gaping Idol",
+        "aspect": "Cold",
+        "location": [4, 25],
+        "desc": "A small marble figurine carved in the shape of a lizard-like head with mouth that gapes up into the sky sits on the ground here, a whorling vortex of sparkling fog suspended above the open mouth. The ground nearby slick with ice and frost."
+      }
+    ],
+    "Ley Lines":[
+      {
+        "source": "Crucible of Goros",
+        "start": [17, 19],
+        "end": [18, 20]
+      },
+      {
+        "source": "Coil of the Pulse",
+        "start": [8, 15],
+        "end": [9, 15]
+      },
+      {
+        "source": "Beyonders Howl",
+        "start": [13, 11],
+        "end": [12, 10]
+      },
+      {
+        "source": "Ironshrub",
+        "start": [17, 28],
+        "end": [18, 27]
+      },
+      {
+        "source": "Mouldering Pillar",
+        "start": [22, 11],
+        "end": [23, 10]
+      },
+      {
+        "source": "Skyswarm",
+        "start": [23, 4],
+        "end": [22, 5]
+      },
+      {
+        "source": "Dancing String",
+        "start": [25, 25],
+        "end": [24, 25]
+      },
+      {
+        "source": "Gaping Idol",
+        "start": [4, 25],
+        "end": [5, 26]
+      }
+    ]
+  }
+}

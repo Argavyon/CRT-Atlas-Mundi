@@ -1,0 +1,96 @@
+{
+  "Elysium":{
+    "Fonts":[
+      {
+        "name": "Springs of Chimera",
+        "aspect": "Arcane",
+        "location": [1, 11],
+        "desc": "Several bright, scintillating rainbows dance in the perpetual mist hanging in the air here."
+      },
+      {
+        "name": "Marble Dais",
+        "aspect": "Holy",
+        "location": [17, 18],
+        "desc": "A large marble dais rise from the ground here. Atop the dais, a number of small carved hemispheres, perhaps the size of a fist, both extend from its surface and are carved in relief. Each raised hemisphere seems to glow from within with a gentle pink light and each relief hemisphere seems to be abnormally dark for the surroundings, appearing as though falling in an indigo shadow."
+      },
+      {
+        "name": "Clockwork Cloud",
+        "aspect": "Impact",
+        "location": [5, 20],
+        "desc": "The air here is abuzz with a mass of tiny, flying bodies that almost obscure one's vision, most the size of insects, but given away as clockwork by the glints and flashes of light off of brass. The mass flows effortlessly around objects and creatures in the area without impeding their progress in the slightest."
+      },
+      {
+        "name": "Crackling Crevasse",
+        "aspect": "Electric",
+        "location": [2, 7],
+        "desc": "A chasm splits the ground here; large white rocks jutting horizontally from the sides towards the center give it the appearance of a gaping maw. Brilliant blue motes of light can occasionally be glimpsed leaping among the white rocks. "
+      },
+      {
+        "name": "The Twilight Copse",
+        "aspect": "Death",
+        "location": [6, 10],
+        "desc": "The air here seems dry and brackish, almost hostile to breathe; amid a small cluster of gnarled trees appears a swirling cloud of faint light that seems to roughly outline the shape of a great tree, swaying in the wind with tendrils of faint twinkling light anchored to the soil as roots might be."
+      },
+      {
+        "name": "Crystal Sundial",
+        "aspect": "Piercing",
+        "location": [6, 7],
+        "desc": "A crystalline structure perhaps the height of a man and twice as wide stands here, focusing rays of light toward a single pitch-black crystal in the center. A single ray of brilliant white light splays forth from this crystal, illuminating in turn three crystals of various colors in progressively larger sizes set in concentric rings."
+      },
+      {
+        "name": "Kingdom Apple",
+        "aspect": "Slashing",
+        "location": [11, 9],
+        "desc": "An intricately engraved brass sphere of indeterminate origin is mounted on a marble pedestal here. Several spindles on whip around the sphere at varying speeds and in what appear to be random directions, but always following the paths of the intricate engravings and occasionally slowing to avoid collisions with other spindles, but never fully coming to a halt. The sphere itself seems rotate in all directions atop the pedestal, though it never loses contact from the pedestal for even a moment."
+      },
+      {
+        "name": "Breathing Cloud",
+        "aspect": "Fire",
+        "location": [8, 4],
+        "desc": "An enormous cloud of smokeless flame hovers high in the air here, the cloud slowly pulsing in and out as though alive. The air underneath the cloud is warm, almost uncomfortably hot."
+      }
+    ],
+    "Ley Lines":[
+      {
+        "source": "Springs of Chimera",
+        "start": [1, 11],
+        "end": [1, 11]
+      },
+      {
+        "source": "Marble Dais",
+        "start": [17, 18],
+        "end": [17, 18]
+      },
+      {
+        "source": "Clockwork Cloud",
+        "start": [5, 20],
+        "end": [6, 20]
+      },
+      {
+        "source": "Crackling Crevasse",
+        "start": [2, 7],
+        "end": [2, 8]
+      },
+      {
+        "source": "The Twilight Copse",
+        "start": [6, 10],
+        "end": [5, 11]
+      },
+      {
+        "source": "Crystal Sundial",
+        "start": [6, 7],
+        "end": [5, 8]
+      },
+      {
+        "source": "Kingdom Apple",
+        "start": [11, 9],
+        "end": [12, 9]
+      },
+      {
+        "source": "Breathing Cloud",
+        "start": [8, 4],
+        "end": [9, 5]
+      }
+    ]
+  }
+}

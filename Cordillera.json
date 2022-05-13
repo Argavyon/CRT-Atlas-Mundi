@@ -1,0 +1,63 @@
+{
+  "Cordillera":{
+    "Fonts":[
+      {
+        "name": "Vesper Arch",
+        "aspect": "Holy",
+        "location": [39, 16],
+        "desc": "A great arch of white ivory rises from the ground here, though a constant clicking and whirring seems to emanate from it. A melodious chorus of chiming augments the periodic peal of ethereal bells that are heard but not seen emanates from the arch"
+      },
+      {
+        "name": "The Phantasmal Barrow",
+        "aspect": "Death",
+        "location": [28, 18],
+        "desc": "A large heaped mound of earth sits here, covered in lush grass and succulents that have an unearthly, translucent greyish color. The air is heavy with a cloying scent of decaying flowers."
+      },
+      {
+        "name": "Watchers Light",
+        "aspect": "Fire",
+        "location": [50, 19],
+        "desc": "A great, smokeless, everburning bonfire of blue and green flame dominates the area; oddly, while it puts off light, there is no heat, no fuel, and nothing in the area seems to be consumed."
+      },
+      {
+        "name": "Weeping Cube",
+        "aspect": "Unholy",
+        "location": [57, 42],
+        "desc": "An enormous, pitted black cube of wrought iron juts from the ground here. From numerous points on the surface of the cube, half-congealed blood slowly oozes, which has left the ground around the cube stained a deep, almost black, red."
+      },
+      {
+        "name": "Juggling Quagmire",
+        "aspect": "Acid",
+        "location": [47, 49],
+        "desc": "Occasionally the ground here trembles as small wet boulders, surfaces pitted and blackened, are belched forth a few feet from the ground before falling back into the earth and sinking quickly beneath the surface, which ripples as though it were liquid as the boulders pass through but still seems solid to the touch."
+      }
+    ],
+    "Ley Lines":[
+      {
+        "source": "Vesper Arch",
+        "start": [39, 16],
+        "end": [38, 17]
+      },
+      {
+        "source": "The Phantasmal Barrow",
+        "start": [28, 18],
+        "end": [28, 19]
+      },
+      {
+        "source": "Watchers Light",
+        "start": [50, 19],
+        "end": [51, 20]
+      },
+      {
+        "source": "Weeping Cube",
+        "start": [57, 42],
+        "end": [58, 41]
+      },
+      {
+        "source": "Juggling Quagmire",
+        "start": [47, 49],
+        "end": [48, 48]
+      }
+    ]
+  }
+}

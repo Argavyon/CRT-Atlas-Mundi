@@ -1,0 +1,96 @@
+{
+  "Stygia":{
+    "Fonts":[
+      {
+        "name": "Floes Aloft",
+        "aspect": "Cold",
+        "location": [12, 4],
+        "desc": "A number of ice floes float at about eye level here, tracing their own slow path across the sky and grinding against each other from time to time, pushing some up and others down so their movement cuts a jagged band through the air."
+      },
+      {
+        "name": "Wash of E-Moch-Nahr",
+        "aspect": "Acid",
+        "location": [17, 7],
+        "desc": "A sour stench stings the nostrils and the eyes here. A large boulder of jet-black stone rises from the ground here, with one of the faces abnormally smooth and flat. From a cleft atop the flat face, a thin amber liquid flows forth, coating the face of the rock and evaporating before it reaches the ground."
+      },
+      {
+        "name": "Obsidian Sentinel",
+        "aspect": "Impact",
+        "location": [20, 8],
+        "desc": "Two thick walls of lava rock support a large obsidian sculpture, which stands astride the walls. The sculpture is vaguely man-shaped, with great massive, misshapen fists, horned jutting from what looks to be a head set directly atop the torso with no neck and furnished with a deformed mouth twisted into what appears to be a hideous-looking scream."
+      },
+      {
+        "name": "Pustule of Tholaghru",
+        "aspect": "Unholy",
+        "location": [3, 12],
+        "desc": "A deep pit sits in this location; overflowing the bounds of the pit is a thick, dark blue liquid that fills the area with an horrific stench. The liquid fizzes and spits as it sloughs off the mound of liquid piled up in the hole and onto the ground around it."
+      },
+      {
+        "name": "Hellforge",
+        "aspect": "Fire",
+        "location": [13, 16],
+        "desc": "Rising from the earth here is a bulbous structure, appearing to be knit together by some sort of organic fibers. Arches and knots in the fibers reveal a strong blue flame in the midst of the structure; the thick, calloused and flat top of the structure is about half the height of a man and has numerous openings allowing access to the blue flame; the distortions from the heat can be seen in the air above these holes even though the surface of the structure itself is quite cool to the touch."
+      },
+      {
+        "name": "Living Whips",
+        "aspect": "Slashing",
+        "location": [6, 18],
+        "desc": "A circle of gargantuan weeping-willow like trees grows here; their abnormally elongated branches do not sway with the breeze but rather undulate like malevolent snakes, the air snapping with the sound of cracking whips as they shoot out smartly in all directions."
+      },
+      {
+        "name": "Hadean Aurora",
+        "aspect": "Death",
+        "location": [6, 4],
+        "desc": "The darkness here is illuminated slightly by ribbons of indigo and deep, dark green tracing and undulating across the sky. Occasionally, showers of opalescent violet and green flakes of some unknown substance rain down upon the ground."
+      },
+      {
+        "name": "Rusted Maiden",
+        "aspect": "Piercing",
+        "location": [15, 13],
+        "desc": "An enormous, pitted box of cast iron, at least thrice the height of a man, stands here with one side ajar. The open side of the box is fitted with hundreds of long, wicked-looking cast iron spikes, spotted red with rust and black with ichor. "
+      }
+    ],
+    "Ley Lines":[
+      {
+        "source": "Floes Aloft",
+        "start": [12, 4],
+        "end": [11, 4]
+      },
+      {
+        "source": "Wash of E-Moch-Nahr",
+        "start": [17, 7],
+        "end": [17, 6]
+      },
+      {
+        "source": "Obsidian Sentinel",
+        "start": [20, 8],
+        "end": [19, 7]
+      },
+      {
+        "source": "Pustule of Tholaghru",
+        "start": [3, 12],
+        "end": [3, 13]
+      },
+      {
+        "source": "Hellforge",
+        "start": [13, 16],
+        "end": [14, 15]
+      },
+      {
+        "source": "Living Whips",
+        "start": [6, 18],
+        "end": [6, 17]
+      },
+      {
+        "source": "Hadean Aurora",
+        "start": [6, 4],
+        "end": [5, 5]
+      },
+      {
+        "source": "Rusted Maiden",
+        "start": [15, 13],
+        "end": [15, 12]
+      }
+    ]
+  }
+}
