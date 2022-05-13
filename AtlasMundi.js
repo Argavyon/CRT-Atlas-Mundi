@@ -80,7 +80,8 @@ async function processLLs(LLs, info, canvasCtx, x_offset, y_offset) {
 			console.log('error');
 			continue;
 		}
-		const [dx, dy] = [(ex-sx)/lx, (ey-sy)/ly];
+        const dx = lx === 0 ? 0 : (ex-sx)/lx;
+        const dy = ly === 0 ? 0 : (ey-sy)/ly;
 		const dirFrom = dirDict[`${-dx}_${-dy}`];
 		const dirTo = dirDict[`${dx}_${dy}`];
 		LL.direction = dirTo.toUpperCase();
