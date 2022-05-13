@@ -190,10 +190,10 @@ async function interactiveMap(curPlaneID, data) {
 
 function main() {
     const data = getJsonData(
-        'https://raw.githubusercontent.com/Argavyon/CRT-Atlas-Mundi/main/Cordillera.json',
-        'https://raw.githubusercontent.com/Argavyon/CRT-Atlas-Mundi/main/Purgatorio.json',
-        'https://raw.githubusercontent.com/Argavyon/CRT-Atlas-Mundi/main/Stygia.json',
-        'https://raw.githubusercontent.com/Argavyon/CRT-Atlas-Mundi/main/Elysium.json',
+        'data/ley/Cordillera.json',
+        'data/ley/Purgatorio.json',
+        'data/ley/Stygia.json',
+        'data/ley/Elysium.json',
     );
 	interactiveMap(406, data);
 	document.querySelectorAll('li.nav-item button').forEach(btn => {
