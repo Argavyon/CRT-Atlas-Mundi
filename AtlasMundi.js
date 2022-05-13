@@ -43,8 +43,8 @@ imgFont.src = 'https://www.nexusclash.com/images/g/status/circle-sparks.png';
 async function processFonts(fonts, info, canvasCtx, x_offset, y_offset) {
 	for (const font of fonts) {
 		const [x,y] = font.location;
-		if (!info[`${x}_${y}`]) info[`${x}_${y}`] = [];
-		info[`${x}_${y}`].push({'Font': font});
+		if (!info[`${x}_${y}`]) info[`${x}_${y}`] =  {Font: null, LLs: {}};
+		info[`${x}_${y}`].Font = font;
 		await imgFont.decode();
         canvasCtx.fillStyle = "#00000060";
         canvasCtx.fillRect((x - x_offset) * 24, (y - y_offset) * 24, 23, 23);
@@ -92,21 +92,21 @@ async function processLLs(LLs, info, canvasCtx, x_offset, y_offset) {
 		const dirTo = dirDict[`${dx}_${dy}`];
 		LL.direction = dirTo.toUpperCase();
 		
-		if (!info[`${sx}_${sy}`]) info[`${sx}_${sy}`] = [];
-		info[`${sx}_${sy}`].push({'LL': LL});
+		if (!info[`${sx}_${sy}`]) info[`${sx}_${sy}`] = {Font: null, LLs: {}};
+		info[`${sx}_${sy}`].LLs[LL.source] = LL;
 		canvasCtx.drawImage(await imgLL('c', dirTo), (sx - x_offset) * 24, (sy - y_offset) * 24, 23, 23);
 		
 		let [curx, cury] = [sx+dx, sy+dy];
 		while (curx !== ex || cury !== ey) {
-			if (!info[`${curx}_${cury}`]) info[`${curx}_${cury}`] = [];
-			info[`${curx}_${cury}`].push({'LL': LL});
+			if (!info[`${curx}_${cury}`]) info[`${curx}_${cury}`] = {Font: null, LLs: {}};
+			info[`${curx}_${cury}`].LLs[LL.source] = LL;
 			canvasCtx.drawImage(await imgLL(dirFrom, 'c'), (curx - x_offset) * 24, (cury - y_offset) * 24, 23, 23);
 			canvasCtx.drawImage(await imgLL('c', dirTo), (curx - x_offset) * 24, (cury - y_offset) * 24, 23, 23);
 			[curx, cury] = [curx+dx, cury+dy];
 		}
 		
-		if (!info[`${ex}_${ey}`]) info[`${ex}_${ey}`] = [];
-		info[`${ex}_${ey}`].push({'LL': LL});
+		if (!info[`${ex}_${ey}`]) info[`${ex}_${ey}`] = {Font: null, LLs: {}};
+        if (!info[`${ex}_${ey}`].LLs[LL.source]) info[`${ex}_${ey}`].LLs[LL.source] = LL;
 		canvasCtx.drawImage(await imgLL(dirFrom, 'c'), (ex - x_offset) * 24, (ey - y_offset) * 24, 23, 23);
 	}
 }
@@ -124,7 +124,7 @@ function tooltipLL(LL) {
 	const T = document.createElement('tbody');
 	T.appendChild(document.createElement('tr')).appendChild(document.createElement('th')).textContent = 'Ley Line';
 	T.appendChild(document.createElement('tr')).appendChild(document.createElement('td')).textContent = `Source: ${LL.source}`;
-	T.appendChild(document.createElement('tr')).appendChild(document.createElement('td')).textContent = `Direction: ${LL.direction}`;
+	if (LL.direction) T.appendChild(document.createElement('tr')).appendChild(document.createElement('td')).textContent = `Direction: ${LL.direction}`;
 	return T;
 }
 
@@ -135,10 +135,8 @@ function tooltipContent(tileInfo, planeName, x, y) {
 	location.appendChild(document.createElement('tr')).appendChild(document.createElement('th')).textContent = `${planeName} (${x}, ${y})`;
 	content.push(location);
 	
-	for (const elem of tileInfo) {
-		if (elem.Font) content.push(tooltipFont(elem.Font));
-		else if (elem.LL) content.push(tooltipLL(elem.LL));
-	}
+    if (tileInfo.Font) content.push(tooltipFont(tileInfo.Font));
+	for (const LL of Object.values(tileInfo.LLs)) content.push(tooltipLL(LL));
 	
 	return content;
 }
