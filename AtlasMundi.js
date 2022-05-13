@@ -46,6 +46,8 @@ async function processFonts(fonts, info, canvasCtx, x_offset, y_offset) {
 		if (!info[`${x}_${y}`]) info[`${x}_${y}`] = [];
 		info[`${x}_${y}`].push({'Font': font});
 		await imgFont.decode();
+        canvasCtx.fillStyle = "#00000060";
+        canvasCtx.fillRect((x - x_offset) * 24, (y - y_offset) * 24, 23, 23);
 		canvasCtx.drawImage(imgFont, (x - x_offset) * 24, (y - y_offset) * 24, 23, 23);
 	}
 }
@@ -75,9 +77,13 @@ async function processLLs(LLs, info, canvasCtx, x_offset, y_offset) {
 		const [sx, sy] = LL.start;
 		const [ex, ey] = LL.end;
 		const [lx, ly] = [Math.abs(ex-sx), Math.abs(ey-sy)];
-		const length = Math.max(lx, ly);
-		if (lx != ly && lx !== 0 && ly !== 0) {
-			console.log('error');
+        const length = Math.max(lx, ly);
+		if (lx !== ly && lx !== 0 && ly !== 0) {
+			console.log(`${LL.source}: Impossible Path`);
+			continue;
+		}
+        if (lx === 0 && ly === 0) {
+			console.log(`${LL.source}: No Leyline`);
 			continue;
 		}
         const dx = lx === 0 ? 0 : (ex-sx)/lx;
