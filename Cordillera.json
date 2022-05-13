@@ -60,12 +60,12 @@
       {
         "source": "Vesper Arch",
         "start": [39, 16],
-        "end": [38, 17]
+        "end": [22, 33]
       },
       {
         "source": "The Phantasmal Barrow",
         "start": [28, 18],
-        "end": [28, 19]
+        "end": [28, 45]
       },
       {
         "source": "Watchers Light",
@@ -80,7 +80,7 @@
       {
         "source": "Juggling Quagmire",
         "start": [47, 49],
-        "end": [48, 48]
+        "end": [29, 31]
       },
       {
         "source": "Silverfall",
@@ -90,12 +90,22 @@
       {
         "source": "Vampire Rose",
         "start": [18, 30],
-        "end": [18, 30]
+        "end": [14, 26]
+      },
+	  {
+        "source": "Vampire Rose",
+        "start": [14, 26],
+        "end": [7, 26]
       },
       {
         "source": "Saeth Gylchog",
         "start": [6, 33],
-        "end": [6, 33]
+        "end": [6, 27]
+      },
+	  {
+        "source": "Saeth Gylchog",
+        "start": [6, 27],
+        "end": [7, 26]
       },
       {
         "source": "Sawcrest",
