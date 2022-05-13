@@ -84,7 +84,31 @@ Juggling Quagmire
 acid-aspected
 Grassland (47, 49 Cordillera, a Grassland, Neighborhood: Fenwater Meadow)
 Occasionally the ground here trembles as small wet boulders, surfaces pitted and blackened, are belched forth a few feet from the ground before falling back into the earth and sinking quickly beneath the surface, which ripples as though it were liquid as the boulders pass through but still seems solid to the touch.
-Leyline direction: North-East 
+Leyline direction: North-East
+
+Silverfall
+arcane-aspected
+Cropland (65, 15 Cordillera, a Cropland, Neighborhood: Port Hope)
+A large black obelisk topped by a bowl rather than a point, perhaps three meters high, with no visible markings rises from the ground here. Silver motes of light cascade down from the edges of the bowl and swirl around the obelisk, soundlessly disappearing before touching any solid object
+Leyline direction: West
+
+Vampire Rose
+piercing-aspected
+Cropland (18, 30 Cordillera, a Cropland, Neighborhood: Great Plains)
+A number of neatly-trimmed, well-cultivated white and yellow rose bushes sit in an orderly circle here; upon closer inspection, their thorns are abnormally elongated and sharp and even the leaves and the petals of the roses curl and narrow to surprisingly pointed tips.
+Leyline direction: ?
+
+Saeth Gylchog
+cold-aspected
+Cropland (6, 33 Cordillera, a Cropland, Neighborhood: Great Plains)
+Five rock circles, with each rock perhaps a foot tall, are arranged in a V-shape with the point of the V facing to the east here.
+Leyline direction: ?
+
+Sawcrest
+slashing-aspected
+Roseway Park (46, 32 Cordillera, a Park, Neighborhood: Belmont Court)
+A great semicircular ridge of pyrite-laced quartz rises vertically from the ground here. It sparkles when looked at directly but gives the uneasy illusion of being in rapid motion when in the corners of the field of vision.
+Leyline direction: South-West
 ''')
 
 purg = re.findall(fontRegex, '''

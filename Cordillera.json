@@ -30,6 +30,30 @@
         "aspect": "Acid",
         "location": [47, 49],
         "desc": "Occasionally the ground here trembles as small wet boulders, surfaces pitted and blackened, are belched forth a few feet from the ground before falling back into the earth and sinking quickly beneath the surface, which ripples as though it were liquid as the boulders pass through but still seems solid to the touch."
+      },
+      {
+        "name": "Silverfall",
+        "aspect": "Arcane",
+        "location": [65, 15],
+        "desc": "A large black obelisk topped by a bowl rather than a point, perhaps three meters high, with no visible markings rises from the ground here. Silver motes of light cascade down from the edges of the bowl and swirl around the obelisk, soundlessly disappearing before touching any solid object"
+      },
+      {
+        "name": "Vampire Rose",
+        "aspect": "Piercing",
+        "location": [18, 30],
+        "desc": "A number of neatly-trimmed, well-cultivated white and yellow rose bushes sit in an orderly circle here; upon closer inspection, their thorns are abnormally elongated and sharp and even the leaves and the petals of the roses curl and narrow to surprisingly pointed tips."
+      },
+      {
+        "name": "Saeth Gylchog",
+        "aspect": "Cold",
+        "location": [6, 33],
+        "desc": "Five rock circles, with each rock perhaps a foot tall, are arranged in a V-shape with the point of the V facing to the east here."
+      },
+      {
+        "name": "Sawcrest",
+        "aspect": "Slashing",
+        "location": [46, 32],
+        "desc": "A great semicircular ridge of pyrite-laced quartz rises vertically from the ground here. It sparkles when looked at directly but gives the uneasy illusion of being in rapid motion when in the corners of the field of vision."
       }
     ],
     "Ley Lines":[
@@ -57,6 +81,26 @@
         "source": "Juggling Quagmire",
         "start": [47, 49],
         "end": [48, 48]
+      },
+      {
+        "source": "Silverfall",
+        "start": [65, 15],
+        "end": [64, 15]
+      },
+      {
+        "source": "Vampire Rose",
+        "start": [18, 30],
+        "end": [18, 30]
+      },
+      {
+        "source": "Saeth Gylchog",
+        "start": [6, 33],
+        "end": [6, 33]
+      },
+      {
+        "source": "Sawcrest",
+        "start": [46, 32],
+        "end": [45, 33]
       }
     ]
   }
