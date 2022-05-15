@@ -1,21 +1,13 @@
 function getDummyData() {
 	return {
 		'Cordillera': {
-			'Fonts': [
-				{
-					'name': 'Vesper Arch',
-					'aspect': 'Holy',
-					'location': [39, 16],
-					'desc': 'A great arch of white ivory rises from the ground here, though a constant clicking and whirring seems to emanate from it. A melodious chorus of chiming augments the periodic peal of ethereal bells that are heard but not seen emanates from the arch.'
-				}
-			],
-			'Ley Lines': [
-				{
-					'source': 'Vesper Arch',
-					'start': [39, 16],
-					'end': [36, 19],
-				}
-			],
+			'Fonts': [{
+                'name': 'Vesper Arch', 'aspect': 'Holy', 'location': [39, 16],
+                'desc': 'A great arch of white ivory rises from the ground here, though a constant clicking and whirring seems to emanate from it. A melodious chorus of chiming augments the periodic peal of ethereal bells that are heard but not seen emanates from the arch.'
+            }],
+            'Ley Lines': [{
+                'source': 'Vesper Arch', 'start': [39, 16], 'end': [36, 19]
+            }]
 		}
 	};
 }
@@ -157,7 +149,7 @@ async function interactiveMap(curPlaneID, data) {
 	let curPlane = planes[curPlaneID];
 	
 	const canvas = document.getElementById('map');
-	canvas.style.backgroundImage = `url(https://github.com/plscks/hypermap/raw/main/${curPlane.name}.png)`;
+	canvas.style.backgroundImage = `url(planes/${curPlane.name}.png)`;
 	canvas.width = curPlane.x;
 	canvas.height = curPlane.y;
 	

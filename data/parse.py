@@ -262,11 +262,11 @@ An enormous cloud of smokeless flame hovers high in the air here, the cloud slow
 Leyline direction: South-East 
 ''')
 
-with open('Cordillera.json', 'w') as f:
+with open('generated/Cordillera.json', 'w') as f:
     print(planeJSON(cord, 'Cordillera'), file=f)
-with open('Purgatorio.json', 'w') as f:
+with open('generated/Purgatorio.json', 'w') as f:
     print(planeJSON(purg, 'Purgatorio'), file=f)
-with open('Stygia.json', 'w') as f:
+with open('generated/Stygia.json', 'w') as f:
     print(planeJSON(styg, 'Stygia'), file=f)
-with open('Elysium.json', 'w') as f:
+with open('generated/Elysium.json', 'w') as f:
     print(planeJSON(elys, 'Elysium'), file=f)

@@ -11,8 +11,11 @@
 			color: white;
 			font-family: "Lucida Grande", "Trebuchet MS", Verdana, Helvetica, Arial, sans-serif;
 		}
-		h2 {
-			padding-bottom: 10px;
+		.title-div {
+			display:flex;
+			flex-direction:row;
+			justify-content: center;
+			align-items: center;
 		}
 		#tooltip {
 			display: none;
@@ -32,8 +35,15 @@
 	</style>
 </head>
 <body>
-	<h1>Atlas Mundi</h1>
-	<h2>Cordillera Biodiversity Research and Census Team</h2>
+	<div class='title-div'>
+		<div>
+			<h1>Atlas Mundi</h1>
+			<h2>Cordillera Biodiversity Research and Census Team</h2>
+		</div>
+		<div>
+			<img src='CRT_logo.jpg' width='305' height='211' style='padding: 20px;'>
+		</div>
+	</div>
 	<div>
 		<ul class='navbar-nav'>
 			<li class='nav-item'><button type='button' class='btn btn-outline-primary' value='406'>Cordillera</button></li>
@@ -44,7 +54,7 @@
 			<li class='nav-item'><button type='button' class='btn btn-outline-info' value='405'>Purgatorio Underground</button></li>
 		</ul>
 		<div align='center'> <canvas id='map'/> </div>
-		<div id='tooltip' class='btn btn-primary btn-sm'><table/></div>
+		<div id='tooltip' class='btn btn-primary btn-sm'><table></table></div>
 	</div>
 	<script type='text/javascript' src='./AtlasMundi.js'></script>
 </body>
