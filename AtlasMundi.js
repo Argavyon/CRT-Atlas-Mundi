@@ -13,6 +13,12 @@ function getDummyData() {
 }
 
 function mergeDict(dest, source) {
+    if (typeof(dest) != 'object') return;
+    if (typeof(source) != 'object') return;
+    if (Array.isArray(source)) {
+        source.forEach(e => dest.push(e));
+        return;
+    }
     for (const key of Object.keys(source)) {
         if (dest[key]) mergeDict(dest[key], source[key]);
         else dest[key] = source[key];
