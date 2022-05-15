@@ -77,11 +77,11 @@ async function processLLs(LLs, info, canvasCtx, x_offset, y_offset) {
 		const [lx, ly] = [Math.abs(ex-sx), Math.abs(ey-sy)];
         const length = Math.max(lx, ly);
 		if (lx !== ly && lx !== 0 && ly !== 0) {
-			console.log(`${LL.source}: Impossible Path`);
+			console.log(`Impossible Path: ${LL.source}`);
 			continue;
 		}
         if (lx === 0 && ly === 0) {
-			console.log(`${LL.source}: No Leyline`);
+			console.log(`No Leyline: ${LL.source}`);
 			continue;
 		}
         const dx = lx === 0 ? 0 : (ex-sx)/lx;
