@@ -188,10 +188,15 @@ async function interactiveMap(curPlaneID, data) {
 
 function main() {
     const data = getJsonData(
-        'data/ley/Cordillera.json',
-        'data/ley/Purgatorio.json',
-        'data/ley/Stygia.json',
-        'data/ley/Elysium.json',
+        'data/ley/natural/Cordillera.json',
+        'data/ley/natural/Purgatorio.json',
+        'data/ley/natural/Stygia.json',
+        'data/ley/natural/Elysium.json',
+        'data/ley/playermade/Cordillera.json',
+        'data/ley/playermade/Centrum.json',
+        'data/ley/playermade/Purgatorio.json',
+        'data/ley/playermade/Stygia.json',
+        'data/ley/playermade/Elysium.json',
     );
 	interactiveMap(406, data);
 	document.querySelectorAll('li.nav-item button').forEach(btn => {

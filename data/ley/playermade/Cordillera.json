@@ -1,0 +1,169 @@
+{
+  "Cordillera":{
+    "Fonts":[
+      {
+        "name": "Springs of Seymour Butz",
+        "aspect": "Arcane",
+        "location": [44, 41]
+      },
+      {
+        "name": "Springs of Value Judgement",
+        "aspect": "Cold",
+        "location": [43, 41]
+      },
+      {
+        "name": "Springs of Value Judgement",
+        "aspect": "Electric",
+        "location": [41, 39]
+      },
+      {
+        "name": "Sparks of a floating terror",
+        "aspect": "Electric",
+        "location": [31, 35],
+        "desc": "Several bright, scintillating rainbows dance in the perpetual mist hanging in the air here."
+      },
+      {
+        "name": "a fonting terror",
+        "aspect": "Arcane",
+        "location": [33, 36],
+        "desc": "Several bright, scintillating rainbows dance in the perpetual mist hanging in the air here."
+      },
+      {
+        "name": "Springs of a goating terror",
+        "aspect": "Cold",
+        "location": [25, 35]
+      },
+      {
+        "name": "Death Castle",
+        "aspect": "Death",
+        "location": [41, 41],
+		"desc": "Several bright, scintillating rainbows dance in the perpetual mist hanging in the air here."
+      },
+      {
+        "name": "ᚹᛁᚾᛁᛉ:ᛋᛏᛁᚾ",
+        "aspect": "???",
+        "location": [9, 26],
+        "desc": "Several bright, scintillating rainbows dance in the perpetual mist hanging in the air here."
+      },
+      {
+        "name": "ᚺᛚᚨᚨᛁᚹᛁᛞᛟ:ᚱᚨᚷᛁᚾᚨ",
+        "aspect": "???",
+        "location": [8, 26],
+        "desc": "Several bright, scintillating rainbows dance in the perpetual mist hanging in the air here."
+      },
+      {
+        "name": "Ice Ice BLORTH Font",
+        "aspect": "???",
+        "location": [8, 27],
+        "desc": "Several bright, scintillating rainbows dance in the perpetual mist hanging in the air here."
+      },
+      {
+        "name": "ᚦᚱᚢᛘᛅ:ᛊᛏᚨᛁᚾᚨ",
+        "aspect": "???",
+        "location": [7, 27],
+        "desc": "Several bright, scintillating rainbows dance in the perpetual mist hanging in the air here."
+      },
+      {
+        "name": "Toxicity of BLORTH",
+        "aspect": "???",
+        "location": [7, 28],
+        "desc": "Several bright, scintillating rainbows dance in the perpetual mist hanging in the air here."
+      },
+      {
+        "name": "Springs of BLORTH",
+        "aspect": "???",
+        "location": [8, 28],
+        "desc": "Several bright, scintillating rainbows dance in the perpetual mist hanging in the air here."
+      },
+      {
+        "name": "Ice sculpture of a disturbingly sexy weasel, generously proportioned",
+        "aspect": "???",
+        "location": [51, 21],
+        "desc": "Several bright, scintillating rainbows dance in the perpetual mist hanging in the air here."
+      },
+      {
+        "name": "Shrine for a disturbingly sexy weasel",
+        "aspect": "???",
+        "location": [52, 22],
+        "desc": "Several bright, scintillating rainbows dance in the perpetual mist hanging in the air here."
+      }
+    ],
+    "Ley Lines":[
+      {
+        "source": "Springs of Seymour Butz",
+        "start": [44, 41],
+        "end": [44, 41]
+      },
+      {
+        "source": "Springs of Value Judgement",
+        "start": [43, 41],
+        "end": [44, 42]
+      },
+      {
+        "source": "Springs of Value Judgement",
+        "start": [41, 39],
+        "end": [42, 40]
+      },
+      {
+        "source": "Sparks of a floating terror",
+        "start": [31, 35],
+        "end": [31, 35]
+      },
+      {
+        "source": "a fonting terror",
+        "start": [33, 36],
+        "end": [33, 36]
+      },
+      {
+        "source": "Springs of a goating terror",
+        "start": [25, 35],
+        "end": [25, 35]
+      },
+      {
+        "source": "Death Castle",
+        "start": [41, 41],
+        "end": [58, 24]
+      },
+      {
+        "source": "ᚹᛁᚾᛁᛉ:ᛋᛏᛁᚾ",
+        "start": [9, 26],
+        "end": [7, 26]
+      },
+      {
+        "source": "ᚺᛚᚨᚨᛁᚹᛁᛞᛟ:ᚱᚨᚷᛁᚾᚨ",
+        "start": [8, 26],
+        "end": [8, 26]
+      },
+      {
+        "source": "Ice Ice BLORTH Font",
+        "start": [8, 27],
+        "end": [7, 26]
+      },
+      {
+        "source": "ᚦᚱᚢᛘᛅ:ᛊᛏᚨᛁᚾᚨ",
+        "start": [7, 27],
+        "end": [7, 26]
+      },
+      {
+        "source": "Toxicity of BLORTH",
+        "start": [7, 28],
+        "end": [7, 26]
+      },
+      {
+        "source": "Springs of BLORTH",
+        "start": [8, 28],
+        "end": [8, 28]
+      },
+      {
+        "source": "Ice sculpture of a disturbingly sexy weasel, generously proportioned",
+        "start": [51, 21],
+        "end": [51, 21]
+      },
+      {
+        "source": "Shrine for a disturbingly sexy weasel",
+        "start": [52, 22],
+        "end": [52, 22]
+      }
+    ]
+  }
+}

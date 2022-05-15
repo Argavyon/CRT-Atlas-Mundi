@@ -1,0 +1,118 @@
+{
+  "Stygia":{
+    "Fonts":[
+      {
+        "name": "Deadly Cage of Owen Grady",
+        "aspect": "Death",
+        "location": [7, 15]
+      },
+      {
+        "name": "Cage of Klotta Gies",
+        "aspect": "Unholy",
+        "location": [6, 15]
+      },
+      {
+        "name": "Cage of Owen Grady",
+        "aspect": "Fire",
+        "location": [5, 15]
+      },
+      {
+        "name": "Cage of Corona-chan",
+        "aspect": "Death",
+        "location": [19, 2]
+      },
+      {
+        "name": "Cage of Corona-chan",
+        "aspect": "Unholy",
+        "location": [20, 1]
+      },
+      {
+        "name": "Cage of Corona-chan",
+        "aspect": "Slashing",
+        "location": [20, 2]
+      },
+      {
+        "name": "Cage of Corona-chan",
+        "aspect": "Fire",
+        "location": [19, 1]
+      },
+      {
+        "name": "Cage of Corona-chan",
+        "aspect": "Piercing",
+        "location": [18, 1]
+      },
+      {
+        "name": "Cage of Corona-chan",
+        "aspect": "Impact",
+        "location": [18, 2]
+      },
+      {
+        "name": "Cage of Corona-chan",
+        "aspect": "Acid",
+        "location": [19, 3]
+      },
+      {
+        "name": "Cage of Corona-chan",
+        "aspect": "Cold",
+        "location": [20, 4]
+      }
+    ],
+    "Ley Lines":[
+      {
+        "source": "Deadly Cage of Owen Grady",
+        "start": [7, 15],
+        "end": [6, 14]
+      },
+      {
+        "source": "Cage of Klotta Gies",
+        "start": [6, 15],
+        "end": [6, 14]
+      },
+      {
+        "source": "Cage of Owen Grady",
+        "start": [5, 15],
+        "end": [6, 14]
+      },
+      {
+        "source": "Cage of Corona-chan",
+        "start": [19, 2],
+        "end": [18, 1]
+      },
+      {
+        "source": "Cage of Corona-chan",
+        "start": [20, 1],
+        "end": [20, 1]
+      },
+      {
+        "source": "Cage of Corona-chan",
+        "start": [20, 2],
+        "end": [20, 1]
+      },
+      {
+        "source": "Cage of Corona-chan",
+        "start": [19, 1],
+        "end": [19, 1]
+      },
+      {
+        "source": "Cage of Corona-chan",
+        "start": [18, 1],
+        "end": [19, 1]
+      },
+      {
+        "source": "Cage of Corona-chan",
+        "start": [18, 2],
+        "end": [19, 2]
+      },
+      {
+        "source": "Cage of Corona-chan",
+        "start": [19, 3],
+        "end": [19, 2]
+      },
+      {
+        "source": "Cage of Corona-chan",
+        "start": [20, 4],
+        "end": [20, 3]
+      }
+    ]
+  }
+}

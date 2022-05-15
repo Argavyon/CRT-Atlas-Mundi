@@ -1,0 +1,88 @@
+{
+  "Elysium":{
+    "Fonts":[
+      {
+        "name": "Grove of a patronising old man",
+        "aspect": "Holy",
+        "location": [20, 15]
+      },
+      {
+        "name": "Grove of a patronising old man",
+        "aspect": "Holy",
+        "location": [19, 15]
+      },
+      {
+        "name": "Grove of a patronising old man",
+        "aspect": "Holy",
+        "location": [19, 14]
+      },
+      {
+        "name": "Grove of a patronising old man",
+        "aspect": "Impact",
+        "location": [19, 13]
+      },
+      {
+        "name": "Grove of a patronising old man",
+        "aspect": "Holy",
+        "location": [20, 13]
+      },
+      {
+        "name": "Springs of Chimera",
+        "aspect": "Fire",
+        "location": [2, 12]
+      },
+      {
+        "name": "Springs of Chimera",
+        "aspect": "Cold",
+        "location": [2, 11]
+      },
+      {
+        "name": "Springs of Chimera",
+        "aspect": "Arcane",
+        "location": [1, 11]
+      }
+    ],
+    "Ley Lines":[
+      {
+        "source": "Grove of a patronising old man",
+        "start": [20, 15],
+        "end": [20, 15]
+      },
+      {
+        "source": "Grove of a patronising old man",
+        "start": [19, 15],
+        "end": [19, 15]
+      },
+      {
+        "source": "Grove of a patronising old man",
+        "start": [19, 14],
+        "end": [19, 14]
+      },
+      {
+        "source": "Grove of a patronising old man",
+        "start": [19, 13],
+        "end": [19, 13]
+      },
+      {
+        "source": "Grove of a patronising old man",
+        "start": [20, 13],
+        "end": [20, 13]
+      },
+      {
+        "source": "Springs of Chimera",
+        "start": [2, 12],
+        "end": [2, 12]
+      },
+      {
+        "source": "Springs of Chimera",
+        "start": [2, 11],
+        "end": [2, 11]
+      },
+      {
+        "source": "Springs of Chimera",
+        "start": [1, 11],
+        "end": [1, 11]
+      }
+    ]
+  }
+}

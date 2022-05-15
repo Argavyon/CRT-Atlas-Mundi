@@ -1,0 +1,148 @@
+{
+  "Purgatorio":{
+    "Fonts":[
+      {
+        "name": "Springs of Holo",
+        "aspect": "Electric",
+        "location": [17, 18]
+      },
+      {
+        "name": "Springs of ᛊᛏᚨᛁᚾᚨᛉ",
+        "aspect": "Impact",
+        "location": [29, 15]
+      },
+      {
+        "name": "Water Palace [Cold]",
+        "aspect": "Cold",
+        "location": [21, 12]
+      },
+      {
+        "name": "Burning Palace [Fire]",
+        "aspect": "Fire",
+        "location": [22, 13]
+      },
+      {
+        "name": "Wizard's Palace [Arcane]",
+        "aspect": "Arcane",
+        "location": [24, 13]
+      },
+      {
+        "name": "The School of the Undefeated of the East",
+        "aspect": "Cold",
+        "location": [23, 9]
+      },
+      {
+        "name": "Springs of Ling",
+        "aspect": "Cold",
+        "location": [24, 9]
+      },
+      {
+        "name": "Springs of Ling",
+        "aspect": "Cold",
+        "location": [23, 8]
+      },
+      {
+        "name": "Frigid Springs of Jwari Disruption",
+        "aspect": "Cold",
+        "location": [4, 24]
+      },
+      {
+        "name": "Sulfur Springs of Jwari Disruption",
+        "aspect": "Acid",
+        "location": [5, 24]
+      },
+      {
+        "name": "Galvanic Springs of Jwari Disruption",
+        "aspect": "Electric",
+        "location": [5, 25]
+      },
+      {
+        "name": "Hot Springs of Jwari Disruption",
+        "aspect": "Fire",
+        "location": [3, 25]
+      },
+      {
+        "name": "Mystic Springs of Jwari Disruption",
+        "aspect": "Arcane",
+        "location": [4, 26]
+      },
+      {
+        "name": "Necrotic Springs of Jwari Disruption",
+        "aspect": "Death",
+        "location": [6, 25]
+      }
+    ],
+    "Ley Lines":[
+      {
+        "source": "Springs of Holo",
+        "start": [17, 18],
+        "end": [17, 18]
+      },
+      {
+        "source": "Springs of ᛊᛏᚨᛁᚾᚨᛉ",
+        "start": [29, 15],
+        "end": [29, 15]
+      },
+      {
+        "source": "Water Palace [Cold]",
+        "start": [21, 12],
+        "end": [22, 11]
+      },
+      {
+        "source": "Burning Palace [Fire]",
+        "start": [22, 13],
+        "end": [22, 12]
+      },
+      {
+        "source": "Wizard's Palace [Arcane]",
+        "start": [24, 13],
+        "end": [23, 12]
+      },
+      {
+        "source": "The School of the Undefeated of the East",
+        "start": [23, 9],
+        "end": [23, 9]
+      },
+      {
+        "source": "Springs of Ling",
+        "start": [24, 9],
+        "end": [23, 10]
+      },
+      {
+        "source": "Springs of Ling",
+        "start": [23, 8],
+        "end": [23, 8]
+      },
+      {
+        "source": "Frigid Springs of Jwari Disruption",
+        "start": [4, 24],
+        "end": [5, 24]
+      },
+      {
+        "source": "Sulfur Springs of Jwari Disruption",
+        "start": [5, 24],
+        "end": [5, 25]
+      },
+      {
+        "source": "Galvanic Springs of Jwari Disruption",
+        "start": [5, 25],
+        "end": [5, 26]
+      },
+      {
+        "source": "Hot Springs of Jwari Disruption",
+        "start": [3, 25],
+        "end": [3, 25]
+      },
+      {
+        "source": "Mystic Springs of Jwari Disruption",
+        "start": [4, 26],
+        "end": [4, 26]
+      },
+      {
+        "source": "Necrotic Springs of Jwari Disruption",
+        "start": [6, 25],
+        "end": [5, 26]
+      }
+    ]
+  }
+}

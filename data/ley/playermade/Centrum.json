@@ -1,0 +1,63 @@
+{
+  "Centrum":{
+    "Fonts":[
+      {
+        "name": "Cage of Corona-chan",
+        "aspect": "Acid",
+        "location": [39, 34]
+      },
+      {
+        "name": "Cage of Corona-chan",
+        "aspect": "Unholy",
+        "location": [40, 33]
+      },
+      {
+        "name": "Cage of Clodia",
+        "aspect": "Acid",
+        "location": [45, 29]
+      },
+      {
+        "name": "The Gourmand's Special Spice",
+        "aspect": "Acid",
+        "location": [45, 28]
+      },
+      {
+        "name": "Cage of Clodia",
+        "aspect": "Unholy",
+        "location": [42, 27]
+      }
+    ],
+    "Ley Lines":[
+      {
+        "source": "Cage of Corona-chan",
+        "start": [39, 34],
+        "end": [39, 34]
+      },
+      {
+        "source": "Cage of Corona-chan",
+        "start": [40, 33],
+        "end": [40, 33]
+      },
+      {
+        "source": "Cage of Clodia",
+        "start": [45, 29],
+        "end": [46, 30]
+      },
+	  {
+        "source": "Cage of Clodia",
+        "start": [46, 30],
+        "end": [46, 31]
+      },
+      {
+        "source": "The Gourmand's Special Spice",
+        "start": [45, 28],
+        "end": [45, 28]
+      },
+      {
+        "source": "Cage of Clodia",
+        "start": [42, 27],
+        "end": [41, 26]
+      }
+    ]
+  }
+}

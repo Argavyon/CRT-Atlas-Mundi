@@ -70,7 +70,7 @@
       {
         "source": "Watchers Light",
         "start": [50, 19],
-        "end": [51, 20]
+        "end": [60, 29]
       },
       {
         "source": "Weeping Cube",
@@ -85,7 +85,7 @@
       {
         "source": "Silverfall",
         "start": [65, 15],
-        "end": [64, 15]
+        "end": [30, 15]
       },
       {
         "source": "Vampire Rose",
