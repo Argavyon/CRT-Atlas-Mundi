@@ -75,12 +75,12 @@
       {
         "source": "Weeping Cube",
         "start": [57, 42],
-        "end": [58, 41]
+        "end": [51, 36]
       },
       {
         "source": "Juggling Quagmire",
         "start": [47, 49],
-        "end": [29, 31]
+        "end": [38, 40]
       },
       {
         "source": "Silverfall",
@@ -110,7 +110,7 @@
       {
         "source": "Sawcrest",
         "start": [46, 32],
-        "end": [45, 33]
+        "end": [42, 36]
       }
     ]
   }

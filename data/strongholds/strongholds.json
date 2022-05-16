@@ -1,0 +1,38 @@
+{
+  "Cordillera":{
+    "Strongholds":[
+      {
+        "faction": "Interplanar Brigades",
+        "location": [32, 36]
+      },
+      {
+        "faction": "Ridleybank Resistance Front",
+        "location": [42, 40]
+      },
+      {
+        "faction": "The Golden Bold",
+        "location": [58, 13]
+      }
+    ]
+  },
+  "Centrum":{
+    "Strongholds":[
+      {
+        "faction": "The Demons Next Door",
+        "location": [40, 34]
+      },
+      {
+        "faction": "The League of Black-Hearted Drifters",
+        "location": [43, 33]
+      }
+    ]
+  },
+  "Purgatorio":{
+    "Strongholds":[
+      {
+        "faction": "The Mages' Council",
+        "location": [22, 11]
+      }
+    ]
+  }
+}

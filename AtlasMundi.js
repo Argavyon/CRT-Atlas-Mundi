@@ -7,7 +7,10 @@ function getDummyData() {
             }],
             'Ley Lines': [{
                 'source': 'Vesper Arch', 'start': [39, 16], 'end': [36, 19]
-            }]
+            }],
+            'Strongholds': [{
+                'faction': 'Dummy Faction', 'location': [11, 24]
+            }],
 		}
 	};
 }
@@ -36,12 +39,16 @@ async function getJsonData(...filenames) {
 	return data;
 }
 
+function emptyInfo() {
+    return {Font: null, LLs: {}, SH: null};
+}
+
 const imgFont = new Image();
 imgFont.src = 'https://www.nexusclash.com/images/g/status/circle-sparks.png';
 async function processFonts(fonts, info, canvasCtx, x_offset, y_offset) {
 	for (const font of fonts) {
 		const [x,y] = font.location;
-		if (!info[`${x}_${y}`]) info[`${x}_${y}`] =  {Font: null, LLs: {}};
+		if (!info[`${x}_${y}`]) info[`${x}_${y}`] =  emptyInfo();
 		info[`${x}_${y}`].Font = font;
 		await imgFont.decode();
         canvasCtx.fillStyle = "#00000060";
@@ -90,23 +97,43 @@ async function processLLs(LLs, info, canvasCtx, x_offset, y_offset) {
 		const dirTo = dirDict[`${dx}_${dy}`];
 		LL.direction = dirTo.toUpperCase();
 		
-		if (!info[`${sx}_${sy}`]) info[`${sx}_${sy}`] = {Font: null, LLs: {}};
+		if (!info[`${sx}_${sy}`]) info[`${sx}_${sy}`] = emptyInfo();
 		info[`${sx}_${sy}`].LLs[LL.source] = LL;
 		canvasCtx.drawImage(await imgLL('c', dirTo), (sx - x_offset) * 24, (sy - y_offset) * 24, 23, 23);
 		
 		let [curx, cury] = [sx+dx, sy+dy];
 		while (curx !== ex || cury !== ey) {
-			if (!info[`${curx}_${cury}`]) info[`${curx}_${cury}`] = {Font: null, LLs: {}};
+			if (!info[`${curx}_${cury}`]) info[`${curx}_${cury}`] = emptyInfo();
 			info[`${curx}_${cury}`].LLs[LL.source] = LL;
 			canvasCtx.drawImage(await imgLL(dirFrom, 'c'), (curx - x_offset) * 24, (cury - y_offset) * 24, 23, 23);
 			canvasCtx.drawImage(await imgLL('c', dirTo), (curx - x_offset) * 24, (cury - y_offset) * 24, 23, 23);
 			[curx, cury] = [curx+dx, cury+dy];
 		}
 		
-		if (!info[`${ex}_${ey}`]) info[`${ex}_${ey}`] = {Font: null, LLs: {}};
+		if (!info[`${ex}_${ey}`]) info[`${ex}_${ey}`] = emptyInfo();
         if (!info[`${ex}_${ey}`].LLs[LL.source]) info[`${ex}_${ey}`].LLs[LL.source] = LL;
 		canvasCtx.drawImage(await imgLL(dirFrom, 'c'), (ex - x_offset) * 24, (ey - y_offset) * 24, 23, 23);
 	}
+}
+
+const imgSH = new Image();
+imgSH.src = 'https://www.nexusclash.com/images/g/status/Stronghold.png';
+async function processSHs(SHs, info, canvasCtx, x_offset, y_offset) {
+	for (const SH of SHs) {
+		const [x,y] = SH.location;
+		if (!info[`${x}_${y}`]) info[`${x}_${y}`] =  emptyInfo();
+		info[`${x}_${y}`].SH = SH;
+		await imgSH.decode();
+		canvasCtx.drawImage(imgSH, (x - x_offset) * 24+11, (y - y_offset) * 24, 12, 12);
+	}
+}
+
+function tooltipSH(SH) {
+	const T = document.createElement('tbody');
+	const headRow = T.appendChild(document.createElement('tr')).appendChild(document.createElement('td'));
+	headRow.appendChild(document.createElement('b')).textContent = `Stronghold: `;
+	headRow.appendChild(document.createTextNode(SH.faction));
+	return T;
 }
 
 function tooltipFont(font) {
@@ -133,6 +160,7 @@ function tooltipContent(tileInfo, planeName, x, y) {
 	location.appendChild(document.createElement('tr')).appendChild(document.createElement('th')).textContent = `${planeName} (${x}, ${y})`;
 	content.push(location);
 	
+    if (tileInfo.SH) content.push(tooltipSH(tileInfo.SH));
     if (tileInfo.Font) content.push(tooltipFont(tileInfo.Font));
 	for (const LL of Object.values(tileInfo.LLs)) content.push(tooltipLL(LL));
 	
@@ -167,6 +195,7 @@ async function interactiveMap(curPlaneID, data) {
 	if (planeData) {
 		if (planeData['Fonts']) processFonts(planeData['Fonts'], info, canvasCtx, curPlane.x_offset, curPlane.y_offset);
 		if (planeData['Ley Lines']) processLLs(planeData['Ley Lines'], info, canvasCtx, curPlane.x_offset, curPlane.y_offset);
+		if (planeData['Strongholds']) processSHs(planeData['Strongholds'], info, canvasCtx, curPlane.x_offset, curPlane.y_offset);
 	}
 	
 	canvas.addEventListener('mousemove', e => {
@@ -197,6 +226,7 @@ function main() {
         'data/ley/playermade/Purgatorio.json',
         'data/ley/playermade/Stygia.json',
         'data/ley/playermade/Elysium.json',
+        // 'data/strongholds/strongholds.json',
     );
 	interactiveMap(406, data);
 	document.querySelectorAll('li.nav-item button').forEach(btn => {
