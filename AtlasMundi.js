@@ -32,7 +32,7 @@ async function getJsonData(...filenames) {
     const data = {};
     
 	for (const filename of filenames) {
-        const json = await fetch(filename).then(resp => resp.json());
+        const json = await fetch('https://argavyon.github.io/CRT-Atlas-Mundi/' + filename).then(resp => resp.json());
         mergeDict(data, json);
 	}
 	
@@ -43,6 +43,9 @@ function emptyInfo() {
     return {Font: null, LLs: {}, SH: null};
 }
 
+const tileX = (x, x_offset) => (x - x_offset) * 48;
+const tileY = (y, y_offset) => (y - y_offset) * 48;
+
 const imgFont = new Image();
 imgFont.src = 'https://www.nexusclash.com/images/g/status/circle-sparks.png';
 async function processFonts(fonts, info, canvasCtx, x_offset, y_offset) {
@@ -52,8 +55,8 @@ async function processFonts(fonts, info, canvasCtx, x_offset, y_offset) {
 		info[`${x}_${y}`].Font = font;
 		await imgFont.decode();
         canvasCtx.fillStyle = "#00000060";
-        canvasCtx.fillRect((x - x_offset) * 24, (y - y_offset) * 24, 23, 23);
-		canvasCtx.drawImage(imgFont, (x - x_offset) * 24, (y - y_offset) * 24, 23, 23);
+        canvasCtx.fillRect(tileX(x, x_offset), tileY(y, y_offset), 46, 46);
+		canvasCtx.drawImage(imgFont, tileX(x, x_offset), tileY(y, y_offset), 46, 46);
 	}
 }
 
@@ -88,7 +91,7 @@ async function processLLs(LLs, info, canvasCtx, x_offset, y_offset) {
 			continue;
 		}
         if (lx === 0 && ly === 0) {
-			console.log(`No Leyline: ${LL.source}`);
+			console.log(`Length Zero Leyline: ${LL.source}`);
 			continue;
 		}
         const dx = lx === 0 ? 0 : (ex-sx)/lx;
@@ -99,20 +102,20 @@ async function processLLs(LLs, info, canvasCtx, x_offset, y_offset) {
 		
 		if (!info[`${sx}_${sy}`]) info[`${sx}_${sy}`] = emptyInfo();
 		info[`${sx}_${sy}`].LLs[LL.source] = LL;
-		canvasCtx.drawImage(await imgLL('c', dirTo), (sx - x_offset) * 24, (sy - y_offset) * 24, 23, 23);
+		canvasCtx.drawImage(await imgLL('c', dirTo), tileX(sx, x_offset), tileY(sy, y_offset), 46, 46);
 		
 		let [curx, cury] = [sx+dx, sy+dy];
 		while (curx !== ex || cury !== ey) {
 			if (!info[`${curx}_${cury}`]) info[`${curx}_${cury}`] = emptyInfo();
 			info[`${curx}_${cury}`].LLs[LL.source] = LL;
-			canvasCtx.drawImage(await imgLL(dirFrom, 'c'), (curx - x_offset) * 24, (cury - y_offset) * 24, 23, 23);
-			canvasCtx.drawImage(await imgLL('c', dirTo), (curx - x_offset) * 24, (cury - y_offset) * 24, 23, 23);
+			canvasCtx.drawImage(await imgLL(dirFrom, 'c'), tileX(curx, x_offset), tileY(cury, y_offset), 46, 46);
+			canvasCtx.drawImage(await imgLL('c', dirTo), tileX(curx, x_offset), tileY(cury, y_offset), 46, 46);
 			[curx, cury] = [curx+dx, cury+dy];
 		}
 		
 		if (!info[`${ex}_${ey}`]) info[`${ex}_${ey}`] = emptyInfo();
         if (!info[`${ex}_${ey}`].LLs[LL.source]) info[`${ex}_${ey}`].LLs[LL.source] = LL;
-		canvasCtx.drawImage(await imgLL(dirFrom, 'c'), (ex - x_offset) * 24, (ey - y_offset) * 24, 23, 23);
+		canvasCtx.drawImage(await imgLL(dirFrom, 'c'), tileX(ex, x_offset), tileY(ey, y_offset), 46, 46);
 	}
 }
 
@@ -124,7 +127,7 @@ async function processSHs(SHs, info, canvasCtx, x_offset, y_offset) {
 		if (!info[`${x}_${y}`]) info[`${x}_${y}`] =  emptyInfo();
 		info[`${x}_${y}`].SH = SH;
 		await imgSH.decode();
-		canvasCtx.drawImage(imgSH, (x - x_offset) * 24+11, (y - y_offset) * 24, 12, 12);
+		canvasCtx.drawImage(imgSH, tileX(x, x_offset)+20, tileY(y, y_offset), 26, 26);
 	}
 }
 
@@ -183,9 +186,15 @@ async function interactiveMap(curPlaneID, data) {
 	let curPlane = planes[curPlaneID];
 	
 	const canvas = document.getElementById('map');
-	canvas.style.backgroundImage = `url(planes/${curPlane.name}.png)`;
-	canvas.width = curPlane.x;
-	canvas.height = curPlane.y;
+	canvas.width = curPlane.x*2;
+	canvas.height = curPlane.y*2;
+    canvas.style.width = curPlane.x + 'px';
+	canvas.style.height = curPlane.y + 'px';
+	//canvas.style.backgroundImage = `url(planes/${curPlane.name}.png)`;
+    const planeImage = new Image();
+    planeImage.src = `planes/${curPlane.name}.png`;
+    await planeImage.decode();
+    canvas.getContext('2d').drawImage(planeImage, 0, 0, curPlane.x*2, curPlane.y*2);
 	
     const planeData = (await data)[curPlane.name];
 	// console.log(JSON.stringify(data, null, 2));

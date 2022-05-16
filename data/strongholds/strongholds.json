@@ -5,6 +5,10 @@
         "faction": "Interplanar Brigades",
         "location": [32, 36]
       },
+	  {
+        "faction": "Feral Clowder",
+        "location": [37, 13]
+      },
       {
         "faction": "Ridleybank Resistance Front",
         "location": [42, 40]
