@@ -99,7 +99,7 @@
       {
         "name": "Grove of anti-Carrot measures: Mountain Dew™ edition",
         "aspect": "???",
-        "location": [52, 22],
+        "location": [55, 36],
         "desc": "A large rock stands in the midst of the fruit trees here with patches of moss and lichen growing on it in eye-pleasing patterns."
       },
       {
@@ -119,6 +119,16 @@
         "aspect": "Arcane",
         "location": [48, 47],
         "desc": "Several bright, scintillating rainbows dance in the perpetual mist hanging in the air here. 42 Magic Points worth of power are currently stored here."
+      },
+      {
+        "name": "Cage of The Great Horned One",
+        "location": [44, 22],
+        "description": "There is a twisted cage of rusted iron spires here. The sixth iron spire appears to have been uprooted and binds together the five others about halfway up their length, causing the center to cast an undulating shadow in a very unsettling shape."
+      },
+      {
+        "name": "Cage of Writhing Broodshire",
+        "location": [44, 24],
+        "description": "There is a twisted cage of rusted iron spires here. The sixth iron spire appears to have been uprooted and binds together the five others about halfway up their length, causing the center to cast an undulating shadow in a very unsettling shape."
       }
     ],
     "Ley Lines":[
@@ -218,17 +228,17 @@
         "end": [42, 40]
       },
       {
-        "source": "the Grove of anti-Carrot measures: Mountain Dew™ edition",
-        "start": [52, 22],
+        "source": "Grove of anti-Carrot measures: Mountain Dew™ edition",
+        "start": [55, 36],
         "end": [52, 36]
       },
       {
-        "source": "the Grove of anti-Carrot measures: Mountain Dew™ edition",
+        "source": "Grove of anti-Carrot measures: Mountain Dew™ edition",
         "start": [52, 36],
         "end": [51, 36]
       },
       {
-        "source": "the Grove of anti-Carrot measures: Mountain Dew™ edition",
+        "source": "Grove of anti-Carrot measures: Mountain Dew™ edition",
         "start": [41, 38],
         "end": [41, 41]
       },
@@ -241,6 +251,11 @@
         "source": "Springs of Value Judgement",
         "start": [41, 40],
         "end": [43, 40]
+      },
+      {
+        "source": "Weeping Cube",
+        "start": [52, 37],
+        "end": [57, 32]
       }
     ]
   }
