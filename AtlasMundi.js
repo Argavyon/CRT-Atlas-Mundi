@@ -196,7 +196,7 @@ async function interactiveMap(curPlaneID, data) {
     await planeImage.decode();
     canvas.getContext('2d').drawImage(planeImage, 0, 0, curPlane.x*2, curPlane.y*2);
 	
-    const planeData = (await data)[curPlane.name];
+    const planeData = data[curPlane.name];
 	// console.log(JSON.stringify(data, null, 2));
 	
 	const canvasCtx = canvas.getContext('2d');
@@ -224,8 +224,8 @@ async function interactiveMap(curPlaneID, data) {
 	});
 }
 
-function main() {
-    const data = getJsonData(
+function async main() {
+    const data = await getJsonData(
         'data/ley/natural/Cordillera.json',
         'data/ley/natural/Purgatorio.json',
         'data/ley/natural/Stygia.json',
@@ -237,7 +237,13 @@ function main() {
         'data/ley/playermade/Elysium.json',
         // 'data/strongholds/strongholds.json',
     );
-    data.then(resolvedData => console.log(resolvedData));
+    
+    for (const plane of Object.keys(data) {
+        for (const category of Object.keys(data[plane]) {
+            data[plane][category].sort((a,b) => (a.location > b.location) - (a.location < b.location));
+        }
+    }
+    console.log(data);
 	interactiveMap(406, data);
 	document.querySelectorAll('li.nav-item button').forEach(btn => {
 		btn.onclick = function() { interactiveMap(btn.value, data); }
