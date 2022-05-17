@@ -237,6 +237,7 @@ function main() {
         'data/ley/playermade/Elysium.json',
         // 'data/strongholds/strongholds.json',
     );
+    console.log(data);
 	interactiveMap(406, data);
 	document.querySelectorAll('li.nav-item button').forEach(btn => {
 		btn.onclick = function() { interactiveMap(btn.value, data); }
