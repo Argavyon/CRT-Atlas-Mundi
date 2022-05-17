@@ -113,6 +113,12 @@
         "aspect": "???",
         "location": [51, 36],
         "desc": "A large rock stands in the midst of the fruit trees here with patches of moss and lichen growing on it in eye-pleasing patterns."
+      },
+      {
+        "name": "Jumping Falls",
+        "aspect": "Arcane",
+        "location": [48, 47],
+        "desc": "Several bright, scintillating rainbows dance in the perpetual mist hanging in the air here. 42 Magic Points worth of power are currently stored here."
       }
     ],
     "Ley Lines":[
@@ -124,7 +130,7 @@
       {
         "source": "Springs of Value Judgement",
         "start": [43, 41],
-        "end": [44, 42]
+        "end": [50, 48]
       },
       {
         "source": "Springs of Value Judgement",
