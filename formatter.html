@@ -1,0 +1,178 @@
+<html>
+<head>
+	<title>Quick JSON formatter</title>
+	<style>
+		th {
+			text-align: left;
+		}
+		.json-out {
+			min-height: 100px;
+			min-width: 600px;
+			height: 0;
+			background-color: LightGray;
+			vertical-align: top;
+		}
+		label {
+			float: left;
+			width: 120px;
+		}
+		div.input input {
+			width: 100%;
+		}
+		div.input {
+			display: block;
+			overflow: hidden;
+		}
+		td {
+			width: 50%;
+			padding: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div style="padding-left:20px">
+		<h1>Quick JSON formatter</h1>
+		<div><b>Paste Text Here</b></div>
+		<div><textarea rows='5' cols='60'></textarea></div>
+		<div class='formatter' id='font'>
+			<table>
+				<tbody>
+					<tr>
+						<th>Font</th>
+						<th style='text-align: right;'><input type='button' value='Clear'></th>
+						<th><input type='button' value='Copy'></th>
+					</tr>
+					<tr>
+						<td colspan='2'>
+							<div>
+								<label>Name</label>
+								<div class="input"><input type='text' name='name'></div>
+							</div>
+							<div>
+								<label>Aspect</label>
+								<div class="input"><input type='text' name='aspect'></div>
+							</div>
+							<div>
+								<label>Location</label>
+								<div class="input"><input type='text' name='location'></div>
+							</div>
+							<div>
+								<label>Description</label>
+								<div class="input"><input type='text' name='description'></div>
+							</div>
+							<div>
+								<label>Depth</label>
+								<div class="input"><input type='text' name='depth'></div>
+							</div>
+							<div>
+								<label>Last Checked</label>
+								<div class="input"><input type='text' name='last checked'></div>
+							</div>
+						</td>
+						<td class='json-out'><pre></pre></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class='formatter' id='ley'>
+			<table>
+				<tbody>
+					<tr>
+						<th>Ley Line</th>
+						<th style='text-align: right;'><input type='button' value='Clear'></th>
+						<th><input type='button' value='Copy'></th>
+					</tr>
+					<tr>
+						<td colspan='2'>
+							<div>
+								<label>Source</label>
+								<div class="input"><input type='text' name='source'></div>
+							</div>
+							<div>
+								<label>Start</label>
+								<div class="input"><input type='text' name='start'></div>
+							</div>
+							<div>
+								<label>End</label>
+								<div class="input"><input type='text' name='end'></div>
+							</div>
+							<div>
+								<label>Last Checked</label>
+								<div class="input"><input type='text' name='last checked'></div>
+							</div>
+						</td>
+						<td class='json-out'><pre></pre></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class='formatter' id='SH'>
+			<table>
+				<tbody>
+					<tr>
+						<th>Stronghold</th>
+						<th style='text-align: right;'><input type='button' value='Clear'></th>
+						<th><input type='button' value='Copy'></th>
+					</tr>
+					<tr>
+						<td colspan='2'>
+							<div>
+								<label>Faction</label>
+								<div class="input"><input type='text' name='faction'></div>
+							</div>
+							<div>
+								<label>Location</label>
+								<div class="input"><input type='text' name='location'></div>
+							</div>
+							<div>
+								<label>Last Checked</label>
+								<div class="input"><input type='text' name='last checked'></div>
+							</div>
+						</td>
+						<td class='json-out'><pre></pre></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<script>
+		for (const formatter of document.querySelectorAll('.formatter')) {
+			const formatAsArray = ['location', 'start', 'end'];
+			
+			const inputs = formatter.querySelectorAll('div.input input');
+			const output = formatter.querySelector('.json-out pre');
+			const clear = formatter.querySelector('input[value="Clear"]');
+			const copy = formatter.querySelector('input[value="Copy"]');
+			
+			clear.addEventListener('click', function() {
+				inputs.forEach(input => (input.value = ''));
+			});
+			copy.addEventListener('click', function() {
+				navigator.clipboard.writeText(output.textContent);
+			});
+			
+			for (const input of inputs) {
+				input.onchange = function() {
+					let body = '';
+					for (const input of inputs) {
+						const key = `"${input.name}"`;
+						let value = input.value;
+						if (value) {
+							if (formatAsArray.includes(input.name)) {
+								if (!value.includes('[')) value = '[' + value;
+								if (!value.includes(']')) value = value + ']';
+							} else {
+								value = `"${value}"`;
+							}
+							body += `        ${key}: ${value},\n`;
+						}
+					}
+					body = body.slice(0, -2);
+					if (body) output.textContent = `      {\n${body}\n      }`
+					else output.textContent = '';
+				};
+			}
+		}
+	</script>
+</body>
+</html>
