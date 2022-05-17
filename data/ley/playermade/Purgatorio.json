@@ -70,6 +70,14 @@
         "name": "Necrotic Springs of Jwari Disruption",
         "aspect": "Death",
         "location": [6, 25]
+      },
+      {
+        "name": "Springs of Ling",
+        "aspect": "Cold",
+        "location": [22, 2],
+        "desc": "Several bright, scintillating rainbows dance in the perpetual mist hanging in the air here.",
+        "depth": "92",
+        "timestamp": "Tue 2022-05-17 01:16:16"
       }
     ],
     "Ley Lines":[
