@@ -19,4 +19,5 @@ jobs:
         uses: limitusus/json-syntax-check@v1
         with:
           pattern: "\\.json$"
+        env:
           BASE: "data"
