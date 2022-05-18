@@ -28,6 +28,10 @@
       {
         "faction": "The League of Black-Hearted Drifters",
         "location": [43, 33]
+      },
+      {
+        "faction": "Avengers of Harmony Falls",
+        "location": [43, 29]
       }
     ]
   },
