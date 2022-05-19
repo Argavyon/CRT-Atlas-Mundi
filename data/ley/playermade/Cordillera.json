@@ -129,6 +129,36 @@
         "name": "Cage of Writhing Broodshire",
         "location": [44, 24],
         "description": "There is a twisted cage of rusted iron spires here. The sixth iron spire appears to have been uprooted and binds together the five others about halfway up their length, causing the center to cast an undulating shadow in a very unsettling shape."
+      },
+      {
+        "name": "Icy Springs of Athru",
+        "aspect": "???",
+        "location": [61, 11],
+        "desc": "Several bright, scintillating rainbows dance in the perpetual mist hanging in the air here."
+      },
+      {
+        "name": "Mystical Springs of Athru",
+        "aspect": "???",
+        "location": [60, 12],
+        "desc": "Several bright, scintillating rainbows dance in the perpetual mist hanging in the air here."
+      },
+      {
+        "name": "Galvanic Springs of Athru",
+        "aspect": "???",
+        "location": [59, 13],
+        "desc": "Several bright, scintillating rainbows dance in the perpetual mist hanging in the air here."
+      },
+      {
+        "name": "Grove of Joe Mama",
+        "aspect": "???",
+        "location": [57, 13],
+        "desc": "A large rock stands in the midst of the fruit trees here with patches of moss and lichen growing on it in eye-pleasing patterns."
+      },
+      {
+        "name": "Springs of Ligma",
+        "aspect": "???",
+        "location": [55, 15],
+        "desc": "A large rock stands in the midst of the fruit trees here with patches of moss and lichen growing on it in eye-pleasing patterns."
       }
     ],
     "Ley Lines":[
@@ -256,6 +286,36 @@
         "source": "Weeping Cube",
         "start": [52, 37],
         "end": [57, 32]
+      },
+      {
+        "source": "Icy Springs of Athru",
+        "start": [61 11],
+        "end": [56, 11]
+      },
+      {
+        "source": "Mystical Springs of Athru",
+        "start": [60, 12],
+        "end": [60, 4]
+      },
+      {
+        "source": "Galvanic Springs of Athru",
+        "start": [59, 13],
+        "end": [59, 10]
+      },
+      {
+        "source": "Galvanic Springs of Athru",
+        "start": [59, 10],
+        "end": [64, 15]
+      },
+      {
+        "source": "Grove of Joe Mama",
+        "start": [57, 13],
+        "end": [59, 11]
+      },
+      {
+        "source": "Grove of Joe Mama",
+        "start": [59, 11],
+        "end": [68, 11]
       }
     ]
   }
