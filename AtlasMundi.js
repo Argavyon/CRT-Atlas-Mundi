@@ -224,7 +224,7 @@ async function interactiveMap(curPlaneID, data) {
 	});
 }
 
-function async main() {
+async function main() {
     const data = await getJsonData(
         'data/ley/natural/Cordillera.json',
         'data/ley/natural/Purgatorio.json',
@@ -238,8 +238,8 @@ function async main() {
         // 'data/strongholds/strongholds.json',
     );
     
-    for (const plane of Object.keys(data) {
-        for (const category of Object.keys(data[plane]) {
+    for (const plane of Object.keys(data)) {
+        for (const category of Object.keys(data[plane])) {
             data[plane][category].sort((a,b) => (a.location > b.location) - (a.location < b.location));
         }
     }
