@@ -202,9 +202,9 @@ async function interactiveMap(curPlaneID, data) {
 	const canvasCtx = canvas.getContext('2d');
 	const info = {};
 	if (planeData) {
-		if (planeData['Fonts']) processFonts(planeData['Fonts'], info, canvasCtx, curPlane.x_offset, curPlane.y_offset);
-		if (planeData['Ley Lines']) processLLs(planeData['Ley Lines'], info, canvasCtx, curPlane.x_offset, curPlane.y_offset);
-		if (planeData['Strongholds']) processSHs(planeData['Strongholds'], info, canvasCtx, curPlane.x_offset, curPlane.y_offset);
+		if (planeData['Fonts']) await processFonts(planeData['Fonts'], info, canvasCtx, curPlane.x_offset, curPlane.y_offset);
+		if (planeData['Ley Lines']) await processLLs(planeData['Ley Lines'], info, canvasCtx, curPlane.x_offset, curPlane.y_offset);
+		if (planeData['Strongholds']) await processSHs(planeData['Strongholds'], info, canvasCtx, curPlane.x_offset, curPlane.y_offset);
 	}
 	
 	canvas.addEventListener('mousemove', e => {
