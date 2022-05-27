@@ -6,16 +6,32 @@
         "location": [32, 36]
       },
 	  {
+        "faction": "Pirates of Rlyeh",
+        "location": [36, 26]
+      },
+	  {
         "faction": "Feral Clowder",
         "location": [37, 13]
+      },
+	  {
+        "faction": "Ragged Philanthropists",
+        "location": [37, 38]
       },
       {
         "faction": "Ridleybank Resistance Front",
         "location": [42, 40]
       },
+	  {
+        "faction": "Malton Fire Department",
+        "location": [45, 43]
+      },
       {
         "faction": "The Golden Bold",
         "location": [58, 13]
+      },
+	  {
+        "faction": "All Your Souls",
+        "location": [53, 36]
       }
     ]
   },
@@ -40,6 +56,14 @@
       {
         "faction": "The Mages' Council",
         "location": [22, 11]
+      }
+    ]
+  },
+  "Stygia":{
+    "Strongholds":[
+      {
+        "faction": "Oblivion Squadron",
+        "location": [20, 8]
       }
     ]
   }
