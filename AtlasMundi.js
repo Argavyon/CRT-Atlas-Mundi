@@ -235,7 +235,7 @@ async function main() {
         'data/ley/playermade/Purgatorio.json',
         'data/ley/playermade/Stygia.json',
         'data/ley/playermade/Elysium.json',
-        'data/strongholds/strongholds.json',
+        'data/strongholds.json',
     );
     
     for (const plane of Object.keys(data)) {
