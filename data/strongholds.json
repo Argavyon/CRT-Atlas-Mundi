@@ -2,18 +2,22 @@
   "Cordillera":{
     "Strongholds":[
       {
+        "faction": "Foundation",
+        "location": [7, 26]
+      },
+      {
         "faction": "Interplanar Brigades",
         "location": [32, 36]
       },
-	  {
+      {
         "faction": "Pirates of Rlyeh",
         "location": [36, 26]
       },
-	  {
+      {
         "faction": "Feral Clowder",
         "location": [37, 13]
       },
-	  {
+      {
         "faction": "Ragged Philanthropists",
         "location": [37, 38]
       },
@@ -21,17 +25,17 @@
         "faction": "Ridleybank Resistance Front",
         "location": [42, 40]
       },
-	  {
+      {
         "faction": "Malton Fire Department",
         "location": [45, 43]
       },
       {
-        "faction": "The Golden Bold",
-        "location": [58, 13]
-      },
-	  {
         "faction": "All Your Souls",
         "location": [53, 36]
+      },
+      {
+        "faction": "The Golden Bold",
+        "location": [58, 13]
       }
     ]
   },
@@ -42,17 +46,21 @@
         "location": [40, 34]
       },
       {
-        "faction": "The League of Black-Hearted Drifters",
-        "location": [43, 33]
-      },
-      {
         "faction": "Avengers of Harmony Falls",
         "location": [43, 29]
+      },
+      {
+        "faction": "The League of Black-Hearted Drifters",
+        "location": [43, 33]
       }
     ]
   },
   "Purgatorio":{
     "Strongholds":[
+      {
+        "faction": "Helix Inc.",
+        "location": [12, 11]
+      },
       {
         "faction": "The Mages' Council",
         "location": [22, 11]
@@ -61,6 +69,10 @@
   },
   "Stygia":{
     "Strongholds":[
+      {
+        "faction": "The Deadly Sins",
+        "location": [6, 4]
+      },
       {
         "faction": "Oblivion Squadron",
         "location": [20, 8]
