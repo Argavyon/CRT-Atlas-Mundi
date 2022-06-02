@@ -1,0 +1,276 @@
+{
+  "Cordillera":{
+    "Badges":[
+      {
+        "name": "Going Up",
+        "location": [11, 31],
+        "side": "Inside",
+        "desc": "You have taken the longest elevator ride on the entire planet!"
+      },
+      {
+        "name": "True Blue",
+        "location": [27, 32],
+        "side": "Outside",
+        "desc": "You have windowshopped outside Cordillera’s luxury designer shoe store."
+      },
+      {
+        "name": "Skipping Stones",
+        "location": [29, 28],
+        "side": "Outside",
+        "desc": "You have visited the park where an old love first blossomed."
+      },
+      {
+        "name": "Forget All That",
+        "location": [35, 18],
+        "side": "Outside",
+        "desc": "You have seen where two lovers set the chaos of life aside for a romantic evening."
+      },
+      {
+        "name": "Grandest of Slams",
+        "location": [35, 42],
+        "side": "Inside",
+        "desc": "You have stood on the home plate where the stunning 15th-inning Cordilleran victory in the Cosmos Series was won."
+      },
+	  {
+        "name": "Flushed!",
+        "location": [41, 31],
+        "side": "Outside",
+        "desc": "You have entered Centrum in a most creative way."
+      },
+      {
+        "name": "Club Feral",
+        "location": [43, 21],
+        "side": "Inside",
+        "desc": "You have surveyed the Choral Forest from the castle’s highest tower."
+      },
+      {
+        "name": "With Great Power",
+        "location": [51, 24],
+        "side": "Outside",
+        "desc": "You have stood in awe of the smooth mountainside left behind after Centrum's landing jets carved their path deep into Cordillera."
+      },
+      {
+        "name": "No Longer Boarding",
+        "location": [54, 29],
+        "side": "Inside",
+        "desc": "You have laid eyes on an antiquated form of transportation imported from Earth many years ago."
+      },
+      {
+        "name": "Whole Dome",
+        "location": [57, 34],
+        "side": "Outside",
+        "desc": "You have conquered the highest mountain this dome has to offer!"
+      },
+      {
+        "name": "Hear Ye!",
+        "location": [67, 10],
+        "side": "Inside",
+        "desc": "You have visited Parliament’s chambers, where a multitude of difficult decisions were made."
+      }
+    ]
+  },
+  "Centrum":{
+    "Badges":[
+      {
+        "name": "Trading Places",
+        "location": [35, 34],
+        "side": "Inside",
+        "desc": "You have stood where an interstellar genetic trafficking group manipulated Cordillerans into trading places with wealthy Earthlings with promises of wealth and adventure."
+      },
+      {
+        "name": "Those Lost",
+        "location": [34, 38],
+        "side": "Outside",
+        "desc": "You have paid your respects to the lives lost in Centrum Epsilon during Centrum’s landing."
+      },
+      {
+        "name": "Family Fun",
+        "location": [45, 33],
+        "side": "Outside",
+        "desc": "You have taken in one of Cordillera’s more peculiar structures."
+      },
+      {
+        "name": "Two Guns",
+        "location": [2, 20],
+        "side": "Outside",
+        "desc": "You have visited the place where the last two members of the Dead Gulch Gang shot and killed each other in a fight over their trove of stolen gold."
+      },
+      {
+        "name": "They Shall Not Pass",
+        "location": [3, 12],
+        "side": "Inside",
+        "desc": "You have found where the faithful made a brave but doomed stand in defense of safe access to knowledge that would shape many souls."
+      },
+      {
+        "name": "Convenient",
+        "location": [9, 15],
+        "side": "Inside",
+        "desc": "You have found the best place to hide."
+      },
+      {
+        "name": "Not Safe",
+        "location": [12, 10],
+        "side": "Inside",
+        "desc": "You have walked the wards of peace and healing that suddenly descended into explosive slaughter when this place first entered the Nexus."
+      },
+      {
+        "name": "Wellspring",
+        "location": [13, 26],
+        "side": "Outside",
+        "desc": "You have walked over the ground where the true greatest trove of gold in the world lay buried, never discovered and never excavated."
+      },
+      {
+        "name": "Made to Last",
+        "location": [19, 13],
+        "side": "Outside",
+        "desc": "You have seen the first hint that Hashaa is capable of gratitude"
+      },
+      {
+        "name": "Rising Tide",
+        "location": [19, 22],
+        "side": "Outside",
+        "desc": "You have seen where the elite of Hyperborea built their first line of defense against the tumultuous seas of their world."
+      },
+      {
+        "name": "Cognitive Dissonance",
+        "location": [23, 11],
+        "side": "Inside",
+        "desc": "You have found where the arcane studies of the uberlich Haldos faltered when he unearthed a truth that his twisted mind could never fully accept."
+      },
+      {
+        "name": "Cassandras Truth",
+        "location": [26, 24],
+        "side": "Inside",
+        "desc": "You have walked the wards where a young and brilliant doctor deduced what was wrong with the entire system of mental health treatment, only to be ignored until she was a very old and brilliant doctor."
+      },
+      {
+        "name": "Not a Drill",
+        "location": [28, 29],
+        "side": "Inside",
+        "desc": "You have found the sirens that alerted the people of Hyperborea to the coming of the great tidal bores."
+      }
+    ]
+  },
+  "Purgatorio":{
+    "Badges":[
+      {
+        "name": "Receded Waters",
+        "location": [2, 7],
+        "side": "Outside",
+        "desc": "You have stood on the mountaintop where a citadel was once built as an ark to preserve knowledge from a great calamity."
+      },
+      {
+        "name": "Love Eternal",
+        "location": [2, 12],
+        "side": "Outside",
+        "desc": "You have witnessed the gifts of Alonai."
+      },
+      {
+        "name": "Book of Martyrs",
+        "location": [6, 1],
+        "side": "Outside",
+        "desc": "You have visited the garden where the names of every angel who has fallen in the war from eternity past are inscribed in text irremovable yet too fine for mortal eyes to read."
+      },
+      {
+        "name": "Divine Comedy",
+        "location": [8, 17],
+        "side": "Outside",
+        "desc": "You have walked the stage where a playwright first introduced the Celestial Chorus."
+      },
+      {
+        "name": "Every Mountain Made Low",
+        "location": [11, 9],
+        "side": "Inside",
+        "desc": "You have visited the seeing chamber from which the wild landscape of Elysium can be seen in its true, perfectly symmetrical shape."
+      },
+      {
+        "name": "Perseverence of the Saints",
+        "location": [13, 4],
+        "side": "Outside",
+        "desc": "You have crossed the bridge that a lone champion once held against hopeless odds."
+      },
+      {
+        "name": "Wild in the Woods",
+        "location": [15, 20],
+        "side": "Outside",
+        "desc": "You have relived a joyous memory of a day spent strolling in the forest in your youth. You are not quite sure whether the memory is originally yours."
+      },
+      {
+        "name": "Taste of Dried Leaves",
+        "location": [17, 19],
+        "side": "Outside",
+        "desc": "You have visited the sacred place where no tea first gave way to tea."
+      },
+      {
+        "name": "According to Their Works",
+        "location": [20, 2],
+        "side": "Inside",
+        "desc": "You have witnessed the outermost layer of the apparatus by which the good and evil deeds of all are recorded."
+      },
+      {
+        "name": "Earth Was Like a Marble",
+        "location": [20, 14],
+        "side": "Outside",
+        "desc": "You have seen far into the distance, to great summits yet undreamt of."
+      }
+    ]
+  },
+  "Stygia":{
+    "Badges":[
+      {
+        "name": "Iron Juggernaut",
+        "location": [2, 9],
+        "side": "Outside",
+        "desc": "You have seen one of the colossal war machines of Stygia, which is dormant for now."
+      },
+      {
+        "name": "A Heaven of Hell",
+        "location": [2, 20],
+        "side": "Inside",
+        "desc": "You have found where the first visitor to this place felt quite certain that he had escaped to freedom."
+      },
+      {
+        "name": "This Place is Not a Place of Honor",
+        "location": [5, 3],
+        "side": "Inside",
+        "desc": "No highly esteemed deed is commemorated here. Nothing valued is here."
+      },
+      {
+        "name": "Kenopsia",
+        "location": [6, 16],
+        "side": "Outside",
+        "desc": "You feel a nagging sense that something important to you was once here, but it is gone now and you cannot remember what it is."
+      },
+      {
+        "name": "Bloodbreaker",
+        "location": [9, 12],
+        "side": "Outside",
+        "desc": "You have visited the site of the battle that shattered this land into many rival realms, in which the last Prince of All Stygia was slain."
+      },
+      {
+        "name": "The Nether Millstone",
+        "location": [15, 4],
+        "side": "Outside",
+        "desc": "You have met the Leviathan, or what is left of it."
+      },
+      {
+        "name": "Hell is Other People",
+        "location": [16, 9],
+        "side": "Inside",
+        "desc": "You have visited the ramshackle gatehouse in which the survivors of the Fortress of Ruin huddled after the inhabitants of the fortress slaughtered each other in a night of massive, many-sided and bloody betrayal."
+      },
+	  {
+        "name": "Eternal I Endure",
+        "location": [17, 17],
+        "side": "Outside",
+        "desc": "All hope abandon, ye who enter here."
+      },
+      {
+        "name": "I Stab at Thee",
+        "location": [20, 8],
+        "side": "Inside",
+        "desc": "You have visited the tower built by the second Lord of Penumbra when her predecessor killed the Wyrm of Tholaghru and was dragged under the cursed bedrock of this land by its dying throes."
+      }
+    ]
+  }
+}
