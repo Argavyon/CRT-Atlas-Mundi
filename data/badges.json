@@ -1,6 +1,6 @@
 {
-  "Cordillera":{
-    "Badges":[
+  "Cordillera": {
+    "Badges": [
       {
         "name": "Going Up",
         "location": [11, 31],
@@ -69,8 +69,8 @@
       }
     ]
   },
-  "Centrum":{
-    "Badges":[
+  "Centrum": {
+    "Badges": [
       {
         "name": "Trading Places",
         "location": [35, 34],
@@ -91,8 +91,8 @@
       }
     ]
   },
-  "Purgatorio":{
-    "Badges":[
+  "Purgatorio": {
+    "Badges": [
       {
         "name": "Two Guns",
         "location": [2, 20],
@@ -155,8 +155,8 @@
       }
     ]
   },
-  "Elysium":{
-    "Badges":[
+  "Elysium": {
+    "Badges": [
       {
         "name": "Receded Waters",
         "location": [2, 7],
@@ -219,8 +219,8 @@
       }
     ]
   },
-  "Stygia":{
-    "Badges":[
+  "Stygia": {
+    "Badges": [
       {
         "name": "Iron Juggernaut",
         "location": [2, 9],
