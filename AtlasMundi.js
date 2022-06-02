@@ -40,7 +40,7 @@ async function getJsonData(...filenames) {
 }
 
 function emptyInfo() {
-    return {Font: null, LLs: {}, SH: null};
+    return {Font: null, LLs: {}, SH: null, Badge: null};
 }
 
 const tileX = (x, x_offset) => (x - x_offset) * 48;
@@ -131,6 +131,18 @@ async function processSHs(SHs, info, canvasCtx, x_offset, y_offset) {
 	}
 }
 
+const imgBadge = new Image();
+imgBadge.src = 'https://www.nexusclash.com/images/g/inf/poweron.gif';
+async function processBadges(badges, info, canvasCtx, x_offset, y_offset) {
+	for (const badge of badges) {
+		const [x,y] = badge.location;
+		if (!info[`${x}_${y}`]) info[`${x}_${y}`] = emptyInfo();
+		info[`${x}_${y}`].Badge = badge;
+		await imgBadge.decode();
+		canvasCtx.drawImage(imgBadge, tileX(x, x_offset), tileY(y, y_offset), 46, 46);
+	}
+}
+
 function tooltipSH(SH) {
 	const T = document.createElement('tbody');
 	const headRow = T.appendChild(document.createElement('tr')).appendChild(document.createElement('td'));
@@ -156,6 +168,15 @@ function tooltipLL(LL) {
 	return T;
 }
 
+function tooltipBadge(badge) {
+    const T = document.createElement('tbody');
+	const headRow = T.appendChild(document.createElement('tr')).appendChild(document.createElement('td'));
+	headRow.appendChild(document.createElement('b')).textContent = 'Badge: ';
+	headRow.appendChild(document.createTextNode(`${badge.name} (${badge.side})`));
+    T.appendChild(document.createElement('tr')).appendChild(document.createElement('td')).textContent = badge.desc;
+	return T;
+}
+
 function tooltipContent(tileInfo, planeName, x, y) {
 	const content = [];
 	
@@ -165,6 +186,7 @@ function tooltipContent(tileInfo, planeName, x, y) {
 	
     if (tileInfo.SH) content.push(tooltipSH(tileInfo.SH));
     if (tileInfo.Font) content.push(tooltipFont(tileInfo.Font));
+    if (tileInfo.Badge) content.push(tooltipBadge(tileInfo.Badge));
 	for (const LL of Object.values(tileInfo.LLs)) content.push(tooltipLL(LL));
 	
 	return content;
@@ -204,6 +226,7 @@ async function interactiveMap(curPlaneID, data) {
 	if (planeData) {
 		if (planeData['Fonts']) await processFonts(planeData['Fonts'], info, canvasCtx, curPlane.x_offset, curPlane.y_offset);
 		if (planeData['Ley Lines']) await processLLs(planeData['Ley Lines'], info, canvasCtx, curPlane.x_offset, curPlane.y_offset);
+        if (planeData['Strongholds']) await processBadges(planeData['Badges'], info, canvasCtx, curPlane.x_offset, curPlane.y_offset);
 		if (planeData['Strongholds']) await processSHs(planeData['Strongholds'], info, canvasCtx, curPlane.x_offset, curPlane.y_offset);
 	}
 	
@@ -236,6 +259,7 @@ async function main() {
         'data/ley/playermade/Stygia.json',
         'data/ley/playermade/Elysium.json',
         'data/strongholds.json',
+        'data/badges.json',
     );
     
     for (const plane of Object.keys(data)) {
