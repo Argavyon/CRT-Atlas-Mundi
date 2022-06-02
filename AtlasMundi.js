@@ -192,7 +192,7 @@ async function interactiveMap(curPlaneID, data) {
 	canvas.style.height = curPlane.y + 'px';
 	//canvas.style.backgroundImage = `url(planes/${curPlane.name}.png)`;
     const planeImage = new Image();
-    planeImage.src = `planes/${curPlane.name}.png`;
+    planeImage.src = `planes/${curPlane.name}_template.png`;
     await planeImage.decode();
     canvas.getContext('2d').drawImage(planeImage, 0, 0, curPlane.x*2, curPlane.y*2);
 	
