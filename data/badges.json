@@ -88,7 +88,11 @@
         "location": [45, 33],
         "side": "Outside",
         "desc": "You have taken in one of Cordillera’s more peculiar structures."
-      },
+      }
+    ]
+  },
+  "Purgatorio":{
+    "Badges":[
       {
         "name": "Two Guns",
         "location": [2, 20],
@@ -151,7 +155,7 @@
       }
     ]
   },
-  "Purgatorio":{
+  "Elysium":{
     "Badges":[
       {
         "name": "Receded Waters",
