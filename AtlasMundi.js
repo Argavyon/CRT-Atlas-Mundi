@@ -49,6 +49,7 @@ const tileY = (y, y_offset) => (y - y_offset) * 48;
 const imgFont = new Image();
 imgFont.src = 'https://www.nexusclash.com/images/g/status/circle-sparks.png';
 async function processFonts(fonts, info, canvasCtx, x_offset, y_offset) {
+    if (!fonts) return;
 	for (const font of fonts) {
 		const [x,y] = font.location;
 		if (!info[`${x}_${y}`]) info[`${x}_${y}`] =  emptyInfo();
@@ -72,6 +73,7 @@ const dirDict = {
 	'1_0': 'e',
 }
 async function processLLs(LLs, info, canvasCtx, x_offset, y_offset) {
+    if (!LLs) return;
 	async function imgLL(from, to) {
 		const from_to = `${from}_${to}`;
 		if (imgLLdict[from_to]) return imgLLdict[`${from}_${to}`];
@@ -122,6 +124,7 @@ async function processLLs(LLs, info, canvasCtx, x_offset, y_offset) {
 const imgSH = new Image();
 imgSH.src = 'https://www.nexusclash.com/images/g/status/Stronghold.png';
 async function processSHs(SHs, info, canvasCtx, x_offset, y_offset) {
+    if (!SHs) return;
 	for (const SH of SHs) {
 		const [x,y] = SH.location;
 		if (!info[`${x}_${y}`]) info[`${x}_${y}`] =  emptyInfo();
@@ -134,6 +137,7 @@ async function processSHs(SHs, info, canvasCtx, x_offset, y_offset) {
 const imgBadge = new Image();
 imgBadge.src = 'https://www.nexusclash.com/images/g/inf/poweron.gif';
 async function processBadges(badges, info, canvasCtx, x_offset, y_offset) {
+    if (!badges) return;
 	for (const badge of badges) {
 		const [x,y] = badge.location;
 		if (!info[`${x}_${y}`]) info[`${x}_${y}`] = emptyInfo();
@@ -224,10 +228,10 @@ async function interactiveMap(curPlaneID, data) {
 	const canvasCtx = canvas.getContext('2d');
 	const info = {};
 	if (planeData) {
-		if (planeData['Fonts']) await processFonts(planeData['Fonts'], info, canvasCtx, curPlane.x_offset, curPlane.y_offset);
-		if (planeData['Ley Lines']) await processLLs(planeData['Ley Lines'], info, canvasCtx, curPlane.x_offset, curPlane.y_offset);
-        if (planeData['Strongholds']) await processBadges(planeData['Badges'], info, canvasCtx, curPlane.x_offset, curPlane.y_offset);
-		if (planeData['Strongholds']) await processSHs(planeData['Strongholds'], info, canvasCtx, curPlane.x_offset, curPlane.y_offset);
+		await processFonts(planeData['Fonts'], info, canvasCtx, curPlane.x_offset, curPlane.y_offset);
+		await processLLs(planeData['Ley Lines'], info, canvasCtx, curPlane.x_offset, curPlane.y_offset);
+        await processBadges(planeData['Badges'], info, canvasCtx, curPlane.x_offset, curPlane.y_offset);
+		await processSHs(planeData['Strongholds'], info, canvasCtx, curPlane.x_offset, curPlane.y_offset);
 	}
 	
 	canvas.addEventListener('mousemove', e => {
